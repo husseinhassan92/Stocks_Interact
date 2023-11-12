@@ -26,11 +26,25 @@ av = AlphaVantageAPI()
 
 
 class ArimaModelBuilder:
+    """crate ARIMA model"""
     def __init__(self,ticker="", n_observations=10000):
         self.ticker = ticker
         self.n_observations = n_observations
 
     def get_data(self, ticker="", n_observations=10000):
+        """Get the data for the user stock
+
+        Parameters
+        ----------
+        ticker : str
+            The ticker symbol of the equity.
+        n_observations : int
+            the number of days for analyze
+
+        Returns
+        -------
+        dataframe
+        """
         df = av.get_daily(ticker)
         if self.n_observations <= len(df):
             self.new_df = df.iloc[:n_observations, :]
@@ -61,7 +75,7 @@ class ArimaModelBuilder:
 
 
     def predict(self):
-        """"""
+        """predict the price of the stock"""
         self.order_aa = self.get_parametes.get('order')
         self.model_arima = ARIMA(self.y_train,
                                  order = (self.order_aa[0], self.order_aa[1], self.order_aa[2]))
@@ -80,7 +94,7 @@ class ArimaModelBuilder:
         return fig
 
     def forecast(self):
-        """graph for the predict prices"""
+        """forecast the price of the stock"""
         self.y_pred_wfv = pd.Series()
         self.history = self.y_train.copy()
         for i in range(len(self.y_test)):
@@ -93,12 +107,25 @@ class ArimaModelBuilder:
         return fig
 
 class LSTMModelBuilder:
-    """"""
+    """create LSTM model"""
     def __init__(self,ticker="", n_observations=10000):
         self.ticker = ticker
         self.n_observations = n_observations
 
     def get_data(self, ticker="", n_observations=10000):
+        """Get the data for the user stock
+
+        Parameters
+        ----------
+        ticker : str
+            The ticker symbol of the equity.
+        n_observations : int
+            the number of days for analyze
+
+        Returns
+        -------
+        dataframe
+        """
         df = av.get_daily(ticker)
         if self.n_observations <= len(df):
             self.new_df = df.iloc[:n_observations, :]
@@ -139,7 +166,7 @@ class LSTMModelBuilder:
 
 
     def graph(self):
-        """"""
+        """cretae the model """
         self.model = Sequential()
         self.model.add(LSTM(128, return_sequences=True, input_shape= (self.x_train.shape[1], 1)))
         self.model.add(LSTM(64, return_sequences=False))

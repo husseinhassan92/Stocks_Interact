@@ -16,11 +16,25 @@ av = AlphaVantageAPI()
 
 
 class GraphBuilder:
+    """class for creating graphs"""
     def __init__(self,ticker="", n_observations=255):
         self.ticker = ticker
         self.n_observations = n_observations
 
     def get_data(self, ticker="", n_observations=255):
+        """Get the data for the user stock
+
+        Parameters
+        ----------
+        ticker : str
+            The ticker symbol of the equity.
+        n_observations : int
+            the number of days for analyze
+
+        Returns
+        -------
+        dataframe
+        """
         df = av.get_daily(ticker)
         if self.n_observations <= len(df):
             self.new_df = df.iloc[:n_observations, :]

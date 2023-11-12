@@ -11,7 +11,7 @@ df['Sector'].fillna('Multi',inplace=True)
 df['Industry'].fillna('Multi',inplace=True)
 db.drop_all()
 db.create_all()
-from application.database import User, Wallet, Stock
+from application.database import Stock
 for index, row in df.iterrows():
     stock = Stock(symbol=row['Symbol'], name=row['Name'], last_sale=row['Last Sale'],
                   net_change=row['Net Change'], market_cap=row['Market Cap'],

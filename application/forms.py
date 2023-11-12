@@ -1,3 +1,5 @@
+"""create the forms of the flask app"""
+
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
@@ -6,6 +8,7 @@ from application.database import User
 
 
 class RegistrationForm(FlaskForm):
+    """the form for register"""
     username = StringField('Username',
                            validators=[DataRequired(), Length(max=20)])
     email = StringField('Email',
@@ -27,6 +30,7 @@ class RegistrationForm(FlaskForm):
 
 
 class LoginForm(FlaskForm):
+    """the form for login"""
     email = StringField('Email',
                         validators=[DataRequired(), Email()])
     password = PasswordField('Password', validators=[DataRequired()])

@@ -1,4 +1,4 @@
-""" module for creating database tables and realtions"""
+""" module for creating database tables and relationships"""
 
 from application import db, login_manager
 from flask_login import UserMixin
@@ -10,6 +10,7 @@ def load_user(user_id):
 
 
 class Wallet(db.Model):
+    """create wallet table"""
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     stock_id = db.Column(db.Integer, db.ForeignKey('stock.id'))
@@ -19,6 +20,7 @@ class Wallet(db.Model):
 
 
 class User(db.Model, UserMixin):
+    """create users table"""
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
@@ -30,6 +32,7 @@ class User(db.Model, UserMixin):
         return f"User('{self.username}', '{self.email}')"
 
 class Stock(db.Model):
+    """create stocks table"""
     id = db.Column(db.Integer, primary_key=True)
     symbol = db.Column(db.String(20), unique=True, nullable=False)
     name = db.Column(db.String(20))

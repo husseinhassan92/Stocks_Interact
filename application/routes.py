@@ -1,3 +1,4 @@
+""""control the routes of the web app"""
 from flask import render_template, url_for, flash, redirect, request
 from application import app, db, bcrypt
 from application.forms import RegistrationForm, LoginForm

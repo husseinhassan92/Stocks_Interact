@@ -1,3 +1,4 @@
+"""run the flask web app"""
 from config import settings
 from application import app
 
