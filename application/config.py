@@ -2,11 +2,9 @@
 you can use your AplhaVantage API key in other parts of the application.
 """
 
-# The os library allows you to communicate with a computer's
-# operating system: https://docs.python.org/3/library/os.html
 import os
 
-# pydantic used for data validation: https://pydantic-docs.helpmanual.io/
+# pydantic used for data validation
 from pydantic_settings  import BaseSettings
 
 
