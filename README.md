@@ -1,6 +1,6 @@
 # Stocks Interact
 
-[![image](application/static/img/lp.JPG)]
+![image](application/static/img/lp.JPG)
 
 The Stocks Interact project is web app that analyze and predict the stock prices using ML models [GiHub repository](https://github.com/husseinhassan92/Stocks_Interact.git)
 
