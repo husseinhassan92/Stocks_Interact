@@ -30,7 +30,7 @@ python run.py
 - Tensorflow -> create deep learning model to perform predication
 
 ## Developer
-### [Hussein Hassan] (https://www.linkedin.com/in/hussein-hassan-513725256/)
+### [Hussein Hassan](https://www.linkedin.com/in/hussein-hassan-513725256/)
 Data scientist & Full Stack Developer
 
 ## The story 
@@ -38,8 +38,8 @@ When I started learning about data science, I was enthusiast about market. Every
 What I found was pretty remarkable. There are statistically relevant and actionable data that have a strong correlation with future price-actions with far superior efficacy than techniques like chart patterns, running averages, and, well, most standard tools available.
 Now that I have found the data and tools, I want to share them with you so you do not have to go through all of the same effort and troubles that I did in finding valid stock market data. That way, you can focus on what matters: learning about the market in clear and actionable ways.
 
-## Live demo
-[!video](https://youtu.be/Z7xWvJ-psWE)
+## Live demo(https://youtu.be/Z7xWvJ-psWE)
+Here a live demo to demonstrate the web app and its features 
 
 
 
