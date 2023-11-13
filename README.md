@@ -1,9 +1,8 @@
 # Stocks Interact
 
-[![image](application/static/img/lp.JPG)](https://pypi.org/project/py-package-template/)
-[![Build Status](https://travis-ci.org/AlexIoannides/py-package-template.svg?branch=master)](https://travis-ci.org/AlexIoannides/py-package-template)
+[![image](application/static/img/lp.JPG)]
 
-The py-template-project package allows users to download the contents of this [GiHub repository](https://github.com/AlexIoannides/py-package-template),  containing a skeleton Python package project to be used as a template for kick-starting development of **any** type of Package; destined for upload to PyPI, or just for local install using Pip. The downloaded package includes the following components to aid rapid development without having to spend time cloning existing set-ups from other projects:
+The Stocks Interact project is web app that analyze and predict the stock prices using ML models [GiHub repository](https://github.com/husseinhassan92/Stocks_Interact.git)
 
 - a minimal `setup.py` file;
 - testing with PyTest;
