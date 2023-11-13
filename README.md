@@ -2,8 +2,8 @@
 
 ![image](application/static/img/lp.JPG)
 
-The Stocks Interact project is web app that analyze and predict the stock prices using ML models [GiHub repository](https://github.com/husseinhassan92/Stocks_Interact.git)
-
+The [Stocks Interact](https://sotcksinteract.onrender.com) project is web app that analyze and predict the stock prices using ML models [GiHub repository](https://github.com/husseinhassan92/Stocks_Interact.git)
+## Installing
 - a minimal `setup.py` file;
 - testing with PyTest;
 - documentation (HTML and PDF) generated using Sphinx with auto-documentation setup; 
