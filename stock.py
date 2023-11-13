@@ -20,4 +20,5 @@ for index, row in df.iterrows():
     db.session.add(stock)
     print('sucess')
 
+
 db.session.commit()
